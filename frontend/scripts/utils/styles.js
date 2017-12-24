@@ -1,0 +1,6 @@
+require('../../../node_modules/transactions-interface-web/styles/index.scss')
+require('../../../node_modules/transactions-cms-web/styles/index.scss')
+require('../../../node_modules/transactions-user-web/styles/index.scss')
+require('../../../node_modules/transactions-authorization-web/styles/index.scss')
+require('../../../node_modules/transactions-tooltip-web/styles/index.scss')
+require('../../styles/index.scss')

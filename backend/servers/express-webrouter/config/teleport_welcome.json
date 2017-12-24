@@ -1,0 +1,60 @@
+{
+  "templates": [
+  {
+    "iconUrl": "https://raw.githubusercontent.com/snipsco/teleport-webpack-react/master/teleport-webpack-react.png",
+    "gitUrl": "https://github.com/snipsco/teleport-webpack-react",
+    "name": "teleport-webpack-react-rc"
+  },
+  {
+    "iconUrl": "https://raw.githubusercontent.com/snipsco/teleport-express-webrouter/master/teleport-express-webrouter.png",
+    "gitUrl": "https://github.com/snipsco/teleport-express-webrouter",
+    "name": "teleport-express-webrouter-rc"
+  },
+  {
+    "iconUrl": "https://raw.githubusercontent.com/snipsco/teleport/master/platforms/teleport-heroku/teleport-heroku.png",
+    "gitUrl": "https://github.com/snipsco/teleport/tree/master/platforms/teleport-heroku",
+    "name": "teleport-heroku-rc"
+  },
+  {
+    "iconUrl": "https://raw.githubusercontent.com/Ledoux/teleport-react-router/master/teleport-react-router.png",
+    "gitUrl": "https://github.com/Ledoux/teleport-react-router",
+    "name": "teleport-react-router"
+  },
+  {
+    "iconUrl": "https://raw.githubusercontent.com/Ledoux/teleport-redux-saga/master/teleport-redux-saga.png",
+    "gitUrl": "https://github.com/Ledoux/teleport-redux-saga",
+    "name": "teleport-redux-saga"
+  },
+  {
+    "iconUrl": "https://raw.githubusercontent.com/Ledoux/teleport-transactions-backend/master/teleport-transactions-backend.png",
+    "gitUrl": "https://github.com/Ledoux/teleport-transactions-backend",
+    "name": "teleport-transactions-backend"
+  },
+  {
+    "iconUrl": "https://raw.githubusercontent.com/Ledoux/teleport-transactions-data/master/teleport-transactions-data.png",
+    "gitUrl": "https://github.com/Ledoux/teleport-transactions-data",
+    "name": "teleport-transactions-data"
+  },
+  {
+    "iconUrl": "https://raw.githubusercontent.com/Ledoux/teleport-transactions-frontend/master/teleport-transactions-frontend.png",
+    "gitUrl": "https://github.com/Ledoux/teleport-transactions-frontend",
+    "name": "teleport-transactions-frontend"
+  }
+],
+  "servers": [
+  {
+    "name": "express-webrouter",
+    "types": [
+      {
+        "url": "http://localhost:5000"
+      },
+      {
+        "url": "https://todo-graph.herokuapp.com"
+      },
+      {
+        "url": "https://staging-todo-graph.herokuapp.com"
+      }
+    ]
+  }
+]
+}

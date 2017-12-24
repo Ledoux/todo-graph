@@ -1,0 +1,130 @@
+{
+	"backend": {
+		"domain": "herokuapp.com",
+		"helpersByName": {
+			"heroku": {
+			}
+		},
+		"serversByName": {
+			"express-webrouter": {
+				"abbreviation": "wbr",
+				"docker": {
+					"imagesByName": {
+						"current": {
+							"version": "0.1"
+						}
+					}
+				},
+				"isMain": true,
+				"runsByTypeName": {
+					"development": {
+						"host": "localhost",
+						"name": "development",
+						"port": "5000",
+						"tag": "development-todo-graph-wbr",
+						"url": "http://localhost:5000"
+					},
+					"production": {
+						"abbreviation": "prod",
+						"hasDns": true,
+						"host": "todo-graph.herokuapp.com",
+						"name": "production",
+						"pip": "pip",
+						"subDomain": "todo-graph",
+						"tag": "todo-graph-wbr",
+						"url": "https://todo-graph.herokuapp.com",
+						"virtualName": "TODO_GRAPH_WBR_SERVICE_HOST"
+					},
+					"staging": {
+						"abbreviation": "stg",
+						"hasDns": true,
+						"host": "staging-todo-graph.herokuapp.com",
+						"name": "staging",
+						"pip": "pip",
+						"subDomain": "staging-todo-graph",
+						"tag": "stg-todo-graph-wbr",
+						"url": "https://staging-todo-graph.herokuapp.com",
+						"virtualName": "stg_TODO_GRAPH_WBR_SERVICE_HOST"
+					}
+				}
+			}
+		}
+	},
+	"frontend": {
+		"run": {
+			"host": "localhost",
+			"name": "development",
+			"port": "5000",
+			"tag": "development-todo-graph-wbr",
+			"url": "http://localhost:5000"
+		},
+		"scssExclude": "/node_modules\\/(?!transactions-).*/",
+		"server": {
+			"abbreviation": "wbr",
+			"docker": {
+				"imagesByName": {
+					"current": {
+						"version": "0.1"
+					}
+				}
+			},
+			"isMain": true,
+			"runsByTypeName": {
+				"development": {
+					"host": "localhost",
+					"name": "development",
+					"port": "5000",
+					"tag": "development-todo-graph-wbr",
+					"url": "http://localhost:5000"
+				},
+				"production": {
+					"abbreviation": "prod",
+					"hasDns": true,
+					"host": "todo-graph.herokuapp.com",
+					"name": "production",
+					"pip": "pip",
+					"subDomain": "todo-graph",
+					"tag": "todo-graph-wbr",
+					"url": "https://todo-graph.herokuapp.com",
+					"virtualName": "TODO_GRAPH_WBR_SERVICE_HOST"
+				},
+				"staging": {
+					"abbreviation": "stg",
+					"hasDns": true,
+					"host": "staging-todo-graph.herokuapp.com",
+					"name": "staging",
+					"pip": "pip",
+					"subDomain": "staging-todo-graph",
+					"tag": "stg-todo-graph-wbr",
+					"url": "https://staging-todo-graph.herokuapp.com",
+					"virtualName": "stg_TODO_GRAPH_WBR_SERVICE_HOST"
+				}
+			}
+		},
+		"serverName": "express-webrouter"
+	},
+	"iconUrl": "https://raw.githubusercontent.com/Ledoux/teleport-transactions-frontend/master/teleport-transactions-frontend.png",
+	"isPlatform": true,
+	"templateNames": [
+		"teleport-webpack-react-rc",
+		"teleport-express-webrouter-rc",
+		"teleport-heroku-rc",
+		"teleport-react-router",
+		"teleport-redux-saga",
+		"teleport-transactions-backend",
+		"teleport-transactions-data",
+		"teleport-transactions-frontend"
+	],
+	"typesByName": {
+		"development": {
+		},
+		"production": {
+			"abbreviation": "prod",
+			"hasDns": true
+		},
+		"staging": {
+			"abbreviation": "stg",
+			"hasDns": true
+		}
+	}
+}

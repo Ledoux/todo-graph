@@ -1,0 +1,12 @@
+.home-page {
+  &__welcome {
+    heigth: 100vh;
+  }
+  &__explore {
+    &__title {
+      color: $dark-font-color;
+      font-weight: 300;
+    }
+    heigth: 100vh;
+  }
+}

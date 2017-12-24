@@ -1,0 +1,99 @@
+<div id="app_div">
+  <link href="https://unpkg.com/basscss@8.0.2/css/basscss.min.css" rel="stylesheet">
+  <style>
+    .teleport {
+      font-family: "Helvetica Neue", Arial, sans-serif;
+      font-size: 34px;
+      font-weight: 300;
+      color: #4c4c4c;
+      @media (min-width: 768px) {
+        font-size: 70px;
+      }
+      @media (min-width: 1440px) {
+        font-size: 100px;
+      }
+    }
+    .teleport__logo {
+      padding-top: 50px;
+      @media (min-width: 768px) {
+        padding-top: 75px;
+      }
+    }
+    .teleport__logo__img {
+      width: 150px;
+      height: 150px;
+      @media (min-width: 768px) {
+        width: 175px;
+        height: 175px;
+      }
+      @media (min-width: 1024px) {
+        width: 200px;
+        height: 200px;
+      }
+    }
+    .teleport__text {
+      font-size: 35px;
+      @media (min-width: 768px) {
+        font-size: 50px;
+      }
+    }
+    .teleport__text__href {
+      color: #1acfff;
+      text-decoration:none;
+    }
+    .teleport__templates {
+      width: 30%;
+      margin-left: auto;
+      margin-right: auto;
+      @media (min-width: 768px) {
+        width: 50%;
+      }
+    }
+    .teleport__templates__img {
+      width: 50px;
+    }
+    .teleport__footer {
+      font-size: 20px;
+      margin-left: auto;
+      margin-right: auto;
+      width: 100%;
+      @media (min-width: 768px) {
+        font-size: 25px;
+      }
+    }
+  </style>
+  <div class="teleport center p2"/>
+    <div class="teleport__logo mb3">
+      <img class="teleport__logo__img" src="/static/images/teleport.png" />
+    </div>
+    <h2 class="mb1">
+      Welcome!
+    </h2>
+    <div class="teleport__text mb3">
+      This app was made using
+      <a
+        class="teleport__text__href"
+        href="https://github.com/snipsco/teleport"
+        target="_blank"
+      >
+        Teleport
+      </a>
+    </div>
+    <div class="teleport__templates p1 mb3">
+      <div class="flex justify-center items-center">
+        <% for(var i=0; i<TELEPORT_WELCOME.templates.length; i++) { %>
+          <div class="mr1">
+             <a
+              title='<%= TELEPORT_WELCOME.templates[i].name %>'
+              href='<%= TELEPORT_WELCOME.templates[i].gitUrl %>'>
+                <img class="teleport__templates__img" src='<%= TELEPORT_WELCOME.templates[i].iconUrl %>' />
+             </a>
+         </div>
+        <% } %>
+      </div>
+    </div>
+    <div class="teleport__footer">
+        From the Snips Tooling Team
+    </div>
+  </div>
+</div>

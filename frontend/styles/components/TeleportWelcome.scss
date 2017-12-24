@@ -1,0 +1,60 @@
+.teleport {
+  font-family: $font-family;
+  font-size: 34px;
+  font-weight: 300;
+  color: $very-dark-grey;
+  @media (min-width: $md) {
+    font-size: 70px;
+  }
+  @media (min-width: $lg) {
+    font-size: 100px;
+  }
+  &__logo {
+    padding-top: 50px;
+    @media (min-width: $md) {
+      padding-top: 75px;
+    }
+    &__img {
+      width: 150px;
+      height: 150px;
+      @media (min-width: $md) {
+        width: 175px;
+        height: 175px;
+      }
+      @media (min-width: $lg) {
+        width: 200px;
+        height: 200px;
+      }
+    }
+  }
+  &__text {
+    font-size: 35px;
+    @media (min-width: $md) {
+      font-size: 50px;
+    }
+    &__href {
+      color: $light-blue;
+      text-decoration:none;
+    }
+  }
+  &__templates {
+    width: 30%;
+    margin-left: auto;
+    margin-right: auto;
+    @media (min-width: $md) {
+      width: 50%;
+    }
+    &__img {
+      width: 50px;
+    }
+  }
+  &__footer {
+    font-size: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    @media (min-width: $md) {
+      font-size: 25px;
+    }
+  }
+}

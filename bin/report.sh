@@ -1,0 +1,1 @@
+ open ./bundler/report.html
